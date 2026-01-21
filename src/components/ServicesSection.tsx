@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building, Headphones, PiggyBank } from "lucide-react";
 
-const WHATSAPP_CONTACT_LINK = "https://wa.me/message";
+const WHATSAPP_CONTACT_LINK = "https://api.whatsapp.com/send?phone=916366577393&text=Hi,%20I%E2%80%99m%20contacting%20you%20via%20your%20website%20regarding%20an%20enquiry.";
 
 const services = [
   {
