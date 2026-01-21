@@ -1,4 +1,4 @@
-import { Instagram, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail, MessageCircle, Users } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiFP";
@@ -34,6 +34,15 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="w-12 h-12 bg-navy-700 rounded-xl flex items-center justify-center text-primary-foreground/70 hover:bg-[#25D366] hover:text-white transition-all duration-300"
               aria-label="Join WhatsApp Community"
+            >
+              <Users className="w-5 h-5" />
+            </a>
+            <a
+              href={WHATSAPP_CONTACT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-navy-700 rounded-xl flex items-center justify-center text-primary-foreground/70 hover:bg-[#25D366] hover:text-white transition-all duration-300"
+              aria-label="Contact via WhatsApp"
             >
               <MessageCircle className="w-5 h-5" />
             </a>
