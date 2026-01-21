@@ -1,4 +1,5 @@
 import { Instagram, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiFP";
 const INSTAGRAM_LINK = "https://instagram.com/hostshwobuild";
@@ -13,9 +14,7 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div className="text-center md:text-left">
             <div className="flex items-center gap-2 justify-center md:justify-start mb-4">
-              <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center">
-                <span className="text-navy-900 font-bold text-lg">H</span>
-              </div>
+              <img src={logo} alt="Hosts Who Build" className="h-12 w-auto" />
               <span className="font-bold text-lg text-primary-foreground">
                 Hosts Who Build
               </span>
