@@ -36,6 +36,13 @@ export const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <img src={logo} alt="Hosts Who Build" className="h-12 w-auto" />
+            <span
+              className={`font-bold text-lg transition-colors ${
+                isScrolled ? "text-foreground" : "text-cream-50"
+              }`}
+            >
+              Hosts Who Build
+            </span>
           </a>
 
           {/* Desktop Navigation */}
