@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiFP";
 
@@ -34,16 +35,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center">
-              <span className="text-navy-900 font-bold text-lg">H</span>
-            </div>
-            <span
-              className={`font-bold text-lg transition-colors ${
-                isScrolled ? "text-foreground" : "text-cream-50"
-              }`}
-            >
-              Hosts Who Build
-            </span>
+            <img src={logo} alt="Hosts Who Build" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
