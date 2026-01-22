@@ -38,7 +38,7 @@ const features = [
 
 export const AspiringHostsSection = () => {
   return (
-    <section id="aspiring-hosts" className="py-20 md:py-28 bg-cream-50 relative overflow-hidden">
+    <section id="aspiring-hosts" className="py-20 md:py-28 bg-cream-50 scroll-mt-20 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-20 w-64 h-64 bg-navy-900 rounded-full blur-3xl" />
