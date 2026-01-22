@@ -19,8 +19,8 @@ const services = [
   {
     icon: PiggyBank,
     title: "Investment Partnerships",
-    description: "Explore investment opportunities in short-term rental properties with experienced operators",
-    features: ["Deal sourcing", "Due diligence", "Partnership structures", "Exit strategies"],
+    description: "Whether you want investors for your property or want to invest in Airbnbs — we connect the right partners",
+    features: ["Get funded for your property", "Invest in profitable stays", "Partnership structures", "Shared revenue models"],
   },
 ];
 
