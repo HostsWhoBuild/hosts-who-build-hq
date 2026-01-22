@@ -28,7 +28,7 @@ const mentorshipFeatures = [
 
 export const MentorshipSection = () => {
   return (
-    <section id="mentorship" className="py-20 md:py-28 bg-navy-900 relative overflow-hidden">
+    <section id="mentorship" className="py-20 md:py-28 bg-navy-900 scroll-mt-20 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gold-500 rounded-full blur-3xl animate-float" />

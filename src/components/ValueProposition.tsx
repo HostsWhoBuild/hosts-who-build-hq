@@ -25,7 +25,7 @@ const values = [
 
 export const ValueProposition = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="why-join" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="inline-block text-gold-500 font-semibold text-sm uppercase tracking-wider mb-4">

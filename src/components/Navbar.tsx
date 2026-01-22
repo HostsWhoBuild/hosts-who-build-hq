@@ -20,6 +20,8 @@ export const Navbar = () => {
   const navLinks = [
     { href: "#benefits", label: "Benefits" },
     { href: "#how-it-works", label: "How It Works" },
+    { href: "#audience", label: "Who It's For" },
+    { href: "#mentorship", label: "Mentorship" },
     { href: "#services", label: "Services" },
   ];
 
