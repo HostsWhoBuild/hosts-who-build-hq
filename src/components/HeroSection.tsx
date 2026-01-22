@@ -25,7 +25,7 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-cream-50/10 backdrop-blur-sm border border-cream-50/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
             <Users className="w-4 h-4 text-gold-400" />
-            <span className="text-cream-50 text-sm font-medium">Community of 500+ Hosts</span>
+            <span className="text-cream-50 text-sm font-medium">Community of 100+ Hosts</span>
           </div>
 
           {/* Main Headline */}
@@ -58,8 +58,8 @@ export const HeroSection = () => {
           {/* Trust Indicators */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             {[
-              { value: "500+", label: "Active Hosts" },
-              { value: "24/7", label: "Community Support" },
+              { value: "100+", label: "Active Hosts" },
+              { value: "10+", label: "Cities Covered" },
               { value: "100%", label: "Privacy First" },
               { value: "Free", label: "To Join" },
             ].map((stat) => (
