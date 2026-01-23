@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Users } from "lucide-react";
+import { MessageCircle, Users, Home, TrendingUp, Shield, Zap } from "lucide-react";
 
 const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiFP";
 const WHATSAPP_CONTACT_LINK = "https://api.whatsapp.com/send?phone=916366577393&text=Hi,%20I%E2%80%99m%20contacting%20you%20via%20your%20website%20regarding%20an%20enquiry.";
+
+const highlights = [
+  { icon: Home, text: "Property Management" },
+  { icon: TrendingUp, text: "Revenue Growth" },
+  { icon: Shield, text: "Expert Support" },
+  { icon: Zap, text: "Quick Setup" },
+];
 
 export const HeroSection = () => {
   return (
@@ -11,6 +18,15 @@ export const HeroSection = () => {
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gold-500 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-400 rounded-full blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/20 rounded-full blur-3xl" />
+      </div>
+
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(rgba(212,175,55,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.3) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px'
+        }} />
       </div>
 
       {/* Decorative Houses */}
@@ -21,24 +37,34 @@ export const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 pt-24 pb-32 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-cream-50/10 backdrop-blur-sm border border-cream-50/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
             <Users className="w-4 h-4 text-gold-400" />
-            <span className="text-cream-50 text-sm font-medium">Community of 100+ Hosts</span>
+            <span className="text-cream-50 text-sm font-medium">Community of 100+ Hosts Across India</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-cream-50 mb-6 animate-slide-up">
-            Hosts Who{" "}
-            <span className="text-gradient-gold">Build</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-cream-50 mb-6 animate-slide-up leading-tight">
+            India's Premier Community for{" "}
+            <span className="text-gradient-gold">Airbnb Hosts</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-cream-100/80 max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            The Airbnb & Holiday Homes Community for Hosts Who Want to Build{" "}
+          <p className="text-lg md:text-xl lg:text-2xl text-cream-100/80 max-w-3xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            Join the Airbnb & Holiday Homes Community for Hosts Who Want to Build{" "}
             <span className="text-gold-400 font-semibold">Profitable, Well-Run Stays</span>
           </p>
+
+          {/* Highlights Row */}
+          <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-10 animate-slide-up" style={{ animationDelay: "0.15s" }}>
+            {highlights.map((item) => (
+              <div key={item.text} className="flex items-center gap-2 bg-cream-50/5 backdrop-blur-sm border border-cream-50/10 rounded-full px-4 py-2">
+                <item.icon className="w-4 h-4 text-gold-400" />
+                <span className="text-cream-100/90 text-sm font-medium">{item.text}</span>
+              </div>
+            ))}
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.2s" }}>
@@ -55,19 +81,26 @@ export const HeroSection = () => {
             </Button>
           </div>
 
+          {/* Social Proof Text */}
+          <p className="mt-6 text-cream-100/50 text-sm animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            ✓ No spam &nbsp;•&nbsp; ✓ Expert hosts only &nbsp;•&nbsp; ✓ Completely free
+          </p>
+
           {/* Trust Indicators */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            {[
-              { value: "100+", label: "Active Hosts" },
-              { value: "10+", label: "Cities Covered" },
-              { value: "100%", label: "Privacy First" },
-              { value: "Free", label: "To Join" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-gold-400">{stat.value}</div>
-                <div className="text-sm text-cream-100/60">{stat.label}</div>
-              </div>
-            ))}
+          <div className="mt-12 pt-10 border-t border-cream-50/10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+              {[
+                { value: "100+", label: "Active Hosts" },
+                { value: "10+", label: "Cities Covered" },
+                { value: "₹10Cr+", label: "Revenue Managed" },
+                { value: "Free", label: "To Join" },
+              ].map((stat) => (
+                <div key={stat.label} className="text-center group">
+                  <div className="text-3xl md:text-4xl font-bold text-gold-400 group-hover:scale-110 transition-transform">{stat.value}</div>
+                  <div className="text-sm text-cream-100/60 mt-1">{stat.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
