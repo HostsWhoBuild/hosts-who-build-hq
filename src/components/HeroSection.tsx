@@ -90,10 +90,10 @@ export const HeroSection = () => {
           <div className="mt-12 pt-10 border-t border-cream-50/10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               {[
-                { value: "100+", label: "Active Hosts" },
-                { value: "10+", label: "Cities Covered" },
-                { value: "₹10Cr+", label: "Revenue Managed" },
-                { value: "Free", label: "To Join" },
+                { value: "100+", label: "Vetted Hosts" },
+                { value: "10+", label: "Indian Cities" },
+                { value: "📊", label: "Shared Growth Insights" },
+                { value: "🇮🇳", label: "India-First Strategies" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center group">
                   <div className="text-3xl md:text-4xl font-bold text-gold-400 group-hover:scale-110 transition-transform">{stat.value}</div>
