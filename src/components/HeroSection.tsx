@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Users, Home, TrendingUp, Shield, Zap } from "lucide-react";
+import { MessageCircle, Users, Home, TrendingUp, Shield, Zap, ChartColumnIncreasing } from "lucide-react";
 
 const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiFP";
 const WHATSAPP_CONTACT_LINK = "https://api.whatsapp.com/send?phone=916366577393&text=Hi,%20I%E2%80%99m%20contacting%20you%20via%20your%20website%20regarding%20an%20enquiry.";
@@ -89,17 +89,24 @@ export const HeroSection = () => {
           {/* Trust Indicators */}
           <div className="mt-12 pt-10 border-t border-cream-50/10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              {[
-                { value: "100+", label: "Vetted Hosts" },
-                { value: "10+", label: "Indian Cities" },
-                { value: "📊", label: "Shared Growth Insights" },
-                { value: "🇮🇳", label: "India-First Strategies" },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center group">
-                  <div className="text-3xl md:text-4xl font-bold text-gold-400 group-hover:scale-110 transition-transform">{stat.value}</div>
-                  <div className="text-sm text-cream-100/60 mt-1">{stat.label}</div>
+              <div className="text-center group">
+                <div className="text-3xl md:text-4xl font-bold text-gold-400 group-hover:scale-110 transition-transform">100+</div>
+                <div className="text-sm text-cream-100/60 mt-1">Vetted Hosts</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-3xl md:text-4xl font-bold text-gold-400 group-hover:scale-110 transition-transform">10+</div>
+                <div className="text-sm text-cream-100/60 mt-1">Indian Cities</div>
+              </div>
+              <div className="text-center group">
+                <div className="flex justify-center text-gold-400 group-hover:scale-110 transition-transform">
+                  <ChartColumnIncreasing className="w-8 h-8 md:w-10 md:h-10" />
                 </div>
-              ))}
+                <div className="text-sm text-cream-100/60 mt-1">Shared Growth Insights</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-3xl md:text-4xl font-bold text-gold-400 group-hover:scale-110 transition-transform">🇮🇳</div>
+                <div className="text-sm text-cream-100/60 mt-1">India-First Strategies</div>
+              </div>
             </div>
           </div>
         </div>
