@@ -17,7 +17,7 @@ const features = [
   {
     icon: Clock,
     title: "Flexible Schedule",
-    description: "Host on your own terms. Whether it's weekends or during holidays, you decide when to welcome guests.",
+    description: "Get assistance to manage your BnB so you can host on your own terms. We handle the heavy lifting while you stay in control.",
   },
   {
     icon: Users,
@@ -31,7 +31,7 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Risk-Free Start",
+    title: "Start with Confidence",
     description: "We guide you through compliance, pricing, and guest management so you can start with confidence.",
   },
 ];
@@ -52,8 +52,8 @@ export const AspiringHostsSection = () => {
             For Aspiring Hosts
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
-            Turn Your Space Into a{" "}
-            <span className="text-gradient-gold">Side Income</span>
+            Turn Your Side Income Dream Into{" "}
+            <span className="text-gradient-gold">Reality</span>
           </h2>
           <p className="text-lg text-navy-600">
             Dreaming of becoming an Airbnb host? We help you start your hosting journey while you 
@@ -86,11 +86,11 @@ export const AspiringHostsSection = () => {
         <div className="text-center">
           <Button variant="default" size="lg" asChild>
             <a href={WHATSAPP_CONTACT_LINK} target="_blank" rel="noopener noreferrer" className="gap-2">
-              Start Your Hosting Journey
+              Quit Waiting, Start Hosting
             </a>
           </Button>
           <p className="text-sm text-navy-500 mt-4">
-            Free consultation • No commitments • Expert guidance
+            No commitments • Expert guidance • Community support
           </p>
         </div>
       </div>
