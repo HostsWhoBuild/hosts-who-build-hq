@@ -18,9 +18,9 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { href: "#benefits", label: "Benefits" },
+    { href: "#benefits", label: "Why Join" },
     { href: "#how-it-works", label: "How It Works" },
-    { href: "#audience", label: "Who It's For" },
+    { href: "#audience", label: "Ideal Hosts" },
     { href: "#mentorship", label: "Mentorship" },
     { href: "#services", label: "Services" },
   ];
