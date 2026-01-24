@@ -1,4 +1,5 @@
 import { Instagram, Mail, MessageCircle, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiFP";
@@ -77,9 +78,9 @@ export const Footer = () => {
             <a href={`mailto:${EMAIL_ADDRESS}`} className="text-primary-foreground/50 hover:text-gold-400 transition-colors">
               {EMAIL_ADDRESS}
             </a>
-            <a href="#" className="text-primary-foreground/50 hover:text-gold-400 transition-colors">
+            <Link to="/privacy-policy" className="text-primary-foreground/50 hover:text-gold-400 transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="text-primary-foreground/50 hover:text-gold-400 transition-colors">
               Terms of Service
             </a>
