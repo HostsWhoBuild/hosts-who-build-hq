@@ -1,11 +1,14 @@
 import { ArrowRight, CheckCircle2, Lightbulb, Rocket, Users } from "lucide-react";
 
+const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiFP";
+
 const steps = [
   {
     number: "01",
     icon: Users,
     title: "Join the Community",
     description: "Click the WhatsApp link and become part of our growing network of hosts",
+    link: WHATSAPP_COMMUNITY_LINK,
   },
   {
     number: "02",
@@ -46,16 +49,34 @@ export const HowItWorks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
             <div key={step.number} className="relative">
-              <div className="bg-navy-700/50 rounded-2xl p-6 border border-navy-600 hover:border-gold-500/30 transition-all duration-300 h-full">
-                <div className="text-gold-400 font-bold text-5xl opacity-20 mb-4">
-                  {step.number}
+              {step.link ? (
+                <a
+                  href={step.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-navy-700/50 rounded-2xl p-6 border border-navy-600 hover:border-gold-500/50 hover:bg-navy-700/70 transition-all duration-300 h-full group cursor-pointer"
+                >
+                  <div className="text-gold-400 font-bold text-5xl opacity-20 mb-4">
+                    {step.number}
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <step.icon className="w-6 h-6 text-navy-900" />
+                  </div>
+                  <h3 className="text-lg font-bold text-primary-foreground mb-2 group-hover:text-gold-400 transition-colors">{step.title}</h3>
+                  <p className="text-primary-foreground/60 text-sm leading-relaxed">{step.description}</p>
+                </a>
+              ) : (
+                <div className="bg-navy-700/50 rounded-2xl p-6 border border-navy-600 hover:border-gold-500/30 transition-all duration-300 h-full">
+                  <div className="text-gold-400 font-bold text-5xl opacity-20 mb-4">
+                    {step.number}
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mb-4">
+                    <step.icon className="w-6 h-6 text-navy-900" />
+                  </div>
+                  <h3 className="text-lg font-bold text-primary-foreground mb-2">{step.title}</h3>
+                  <p className="text-primary-foreground/60 text-sm leading-relaxed">{step.description}</p>
                 </div>
-                <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mb-4">
-                  <step.icon className="w-6 h-6 text-navy-900" />
-                </div>
-                <h3 className="text-lg font-bold text-primary-foreground mb-2">{step.title}</h3>
-                <p className="text-primary-foreground/60 text-sm leading-relaxed">{step.description}</p>
-              </div>
+              )}
               
               {/* Arrow connector (hidden on last item and mobile) */}
               {index < steps.length - 1 && (
