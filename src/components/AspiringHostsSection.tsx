@@ -52,8 +52,8 @@ export const AspiringHostsSection = () => {
             For Aspiring Hosts
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
-            Turn Your Side Income Dream Into{" "}
-            <span className="text-gradient-gold">Reality</span>
+            Turn Your Side Income<br />
+            <span className="text-gradient-gold">Dream into Reality</span>
           </h2>
           <p className="text-lg text-navy-600">
             Dreaming of becoming an Airbnb host? We help you start your hosting journey while you 
