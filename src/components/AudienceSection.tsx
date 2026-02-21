@@ -3,7 +3,7 @@ import { Building2, Home, Palmtree, Sparkles } from "lucide-react";
 const audiences = [
   {
     icon: Home,
-    title: "Airbnb Hosts",
+    title: "Short Term Rental Hosts",
     description: "Whether you have one unit or ten, learn to maximize every booking",
   },
   {
