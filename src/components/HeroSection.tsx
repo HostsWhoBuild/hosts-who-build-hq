@@ -52,7 +52,7 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl lg:text-2xl text-cream-100/80 max-w-3xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            Join the Airbnb & Holiday Homes Community for Hosts Who Want to Build{" "}
+            Join the Airbnb & Short Term Rentals Community for Hosts Who Want to{" "}<br />Build{" "}
             <span className="text-gold-400 font-semibold">Profitable, Well-Run Stays</span>
           </p>
 
