@@ -1,12 +1,30 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const PrivacyPolicy = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
+          <Button
+            variant="ghost"
+            onClick={() => navigate("/")}
+            className="mb-4 text-navy-700 hover:text-navy-900"
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Home
+          </Button>
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-3xl">📄</span>
