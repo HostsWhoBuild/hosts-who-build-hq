@@ -49,7 +49,7 @@ export const MentorshipSection = () => {
               <span className="text-gradient-gold">Experienced Hosts</span>
             </h2>
 
-            <p className="text-lg text-cream-100/80 mb-8 leading-relaxed">
+            <p className="text-lg text-cream-50/90 mb-8 leading-relaxed">
               Fast-track your hosting journey with personalized mentorship sessions. Our experienced 
               hosts share real insights, proven strategies, and practical tips that textbooks can't teach.
             </p>
@@ -63,16 +63,11 @@ export const MentorshipSection = () => {
               </Button>
             </div>
 
-            <div className="flex items-center gap-4 text-cream-100/60 text-sm">
+            <div className="flex items-center gap-4 text-cream-50/80 text-sm">
               <div className="flex -space-x-2">
-                {[1, 2, 3].map((i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 border-2 border-navy-900 flex items-center justify-center text-navy-900 text-xs font-bold"
-                  >
-                    {["S", "A", "R"][i - 1]}
-                  </div>
-                ))}
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=64&h=64&fit=crop&crop=face" alt="Host" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=64&h=64&fit=crop&crop=face" alt="Host" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face" alt="Host" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
               </div>
               <span>Trusted by 50+ aspiring hosts</span>
             </div>
