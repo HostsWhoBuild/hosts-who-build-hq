@@ -14,14 +14,14 @@
     <meta property="og:url" content="https://hostswhobuild.com/" />
     <meta property="og:title" content="Airbnb Host Community + Property Management | Hosts Who Build (India)" />
     <meta property="og:description" content="Hosts Who Build helps Airbnb hosts in India improve pricing, occupancy, and operations. Join our host community or explore Airbnb property management in India." />
-    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image" content="https://hostswhobuild.com/og-image.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://hostswhobuild.com/" />
     <meta name="twitter:title" content="Airbnb Host Community + Property Management | Hosts Who Build (India)" />
     <meta name="twitter:description" content="Hosts Who Build helps Airbnb hosts in India improve pricing, occupancy, and operations. Join our host community or explore Airbnb property management in India." />
-    <meta name="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:image" content="https://hostswhobuild.com/og-image.jpg" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://hostswhobuild.com/" />
@@ -31,6 +31,50 @@
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#1e293b" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://hostswhobuild.com/#organization",
+          "name": "Hosts Who Build",
+          "url": "https://hostswhobuild.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://hostswhobuild.com/favicon.png"
+          },
+          "sameAs": [
+            "https://www.instagram.com/hostswhobuild/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://hostswhobuild.com/#website",
+          "url": "https://hostswhobuild.com/",
+          "name": "Hosts Who Build",
+          "publisher": {
+            "@id": "https://hostswhobuild.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://hostswhobuild.com/#webpage",
+          "url": "https://hostswhobuild.com/",
+          "name": "Airbnb Host Community + Property Management | Hosts Who Build (India)",
+          "description": "Hosts Who Build helps Airbnb hosts in India improve pricing, occupancy, and operations. Join our host community or explore Airbnb property management in India.",
+          "isPartOf": {
+            "@id": "https://hostswhobuild.com/#website"
+          },
+          "about": {
+            "@id": "https://hostswhobuild.com/#organization"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
