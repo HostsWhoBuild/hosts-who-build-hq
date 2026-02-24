@@ -1,4 +1,4 @@
-import { Instagram, Mail, MessageCircle, Users } from "lucide-react";
+import { Instagram, Linkedin, Mail, MessageCircle, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
@@ -6,6 +6,7 @@ const WHATSAPP_COMMUNITY_LINK = "https://chat.whatsapp.com/HiQh3q5HY2F4r4nPuzIiF
 const INSTAGRAM_LINK = "https://www.instagram.com/hostswhobuild/";
 const WHATSAPP_CONTACT_LINK = "https://api.whatsapp.com/send?phone=916366577393&text=Hi,%20I%E2%80%99m%20contacting%20you%20via%20your%20website%20regarding%20an%20enquiry.";
 const EMAIL_ADDRESS = "info@hostswhobuild.com";
+const LINKEDIN_LINK = "https://www.linkedin.com/company/hosts-who-build";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -55,6 +56,15 @@ export const Footer = () => {
               aria-label="Follow on Instagram"
             >
               <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href={LINKEDIN_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-navy-700 rounded-xl flex items-center justify-center text-primary-foreground/70 hover:bg-[#0A66C2] hover:text-white transition-all duration-300"
+              aria-label="Follow on LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
             </a>
             <a
               href={`mailto:${EMAIL_ADDRESS}`}
