@@ -1,6 +1,8 @@
 import { GraduationCap, Target, MessageCircle, Calendar, Star, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import mentorFemale from "@/assets/mentor-female.jpg";
+import mentorMale1 from "@/assets/mentor-male1.jpg";
+import mentorMale2 from "@/assets/mentor-male2.jpg";
 const WHATSAPP_CONTACT_LINK = "https://api.whatsapp.com/send?phone=916366577393&text=Hi,%20I%E2%80%99m%20contacting%20you%20via%20your%20website%20regarding%20mentorship%20sessions.";
 
 const mentorshipFeatures = [
@@ -65,9 +67,9 @@ export const MentorshipSection = () => {
 
             <div className="flex items-center gap-4 text-cream-50/80 text-sm">
               <div className="flex -space-x-2">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop&crop=face" alt="Female mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=64&h=64&fit=crop&crop=face" alt="Male mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
-                <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=64&h=64&fit=crop&crop=face" alt="Male mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src={mentorFemale} alt="Female mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src={mentorMale1} alt="Male mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src={mentorMale2} alt="Male mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
               </div>
               <span>Trusted by 50+ aspiring hosts</span>
             </div>
