@@ -39,9 +39,9 @@ export const MentorshipSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-gold-500/20 backdrop-blur-sm border border-gold-500/30 rounded-full px-4 py-2 mb-6">
-              <GraduationCap className="w-4 h-4 text-gold-400" />
-              <span className="text-gold-300 text-sm font-medium">Mentorship Program</span>
+            <div className="inline-flex items-center gap-2 bg-gold-500 rounded-full px-5 py-2.5 mb-6 shadow-lg">
+              <GraduationCap className="w-5 h-5 text-navy-900" />
+              <span className="text-navy-900 text-sm font-bold tracking-wide">Mentorship Program</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-cream-50 mb-6">
@@ -65,9 +65,9 @@ export const MentorshipSection = () => {
 
             <div className="flex items-center gap-4 text-cream-50/80 text-sm">
               <div className="flex -space-x-2">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=64&h=64&fit=crop&crop=face" alt="Host" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
-                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=64&h=64&fit=crop&crop=face" alt="Host" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face" alt="Host" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop&crop=face" alt="Female mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=64&h=64&fit=crop&crop=face" alt="Male mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
+                <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=64&h=64&fit=crop&crop=face" alt="Male mentor" className="w-8 h-8 rounded-full border-2 border-navy-900 object-cover" />
               </div>
               <span>Trusted by 50+ aspiring hosts</span>
             </div>
